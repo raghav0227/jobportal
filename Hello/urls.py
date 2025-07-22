@@ -16,10 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from . import views
 admin.site.site_header = "Online Job Portal Admin"
 admin.site.site_title = "Online Job Portal"
 admin.site.index_title = "Welcome to Online Job Portal"
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('home.urls'))
+    path('',include('home.urls')),
+    path('', views.index, name='index'),
+    path('login/', views.login_view, name='login'),
+    path('register/', views.register_view, name='register')
 ]
