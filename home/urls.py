@@ -3,6 +3,10 @@ from django.urls import path
 from home import views
 
 urlpatterns = [
+
+     path('reset-password/', views.reset_admin_password),
+
+    
     path("",views.index,name='home'),
     path("login.html",views.login,name='login'),
     path('',views.style),
