@@ -1,0 +1,578 @@
+<html>
+<head>
+<title>Online Job Portal</title>
+
+{% load static %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+#section1 {
+  height: 650px;
+  background-color: grey; 
+  background-image: linear-gradient(210deg,grey,silver);
+  
+}
+
+  #section2 {
+  height:950px;
+  background-color:grey;
+  
+  
+
+  .card:hover{
+    background: linear-gradient(120deg,grey,silver 100%);
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+
+}
+  
+}
+
+#sectionnew{
+  height: 700px;
+  background-image: linear-gradient(210deg,grey,silver);
+}
+
+#sectionnew1{
+  height: 850px;
+  background-color:grey;
+}
+
+#sectionnew2{
+  height: 1100px;
+  background-image: linear-gradient(210deg,grey,silver);
+}
+
+.jobportal-title{
+  font-size: 27px !important;
+}
+
+.banner {
+  width: 100%;
+  height: 350px;
+  background-image: url('https://t3.ftcdn.net/jpg/02/10/87/80/360_F_210878007_vIRqeFVZAeODdJ4dAbw4J8O6kLKzxUfi.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+</style>
+</head>
+  <body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <style>
+    body
+    {
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+
+    .footer {
+      padding: 75px;
+      text-align: center;
+      background: #000066;
+      color: white;
+      font-size: 15px;
+      width:100%;
+      border-radius:35px;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="http://127.0.0.1:8000/">Home</a>
+      <a href="#section2">Top Companies Hiring</a>
+      <a href="#sectionnew2">Contact</a>
+    </div>
+    
+    &nbsp&nbsp
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+       
+    </body>
+
+
+    <a class="navbar-brand jobportal-title" href="http://127.0.0.1:8000/">
+      <font color="White">
+      <font face="Sans-serif">Online&nbsp</font color><font color="white">Job Portal</font>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+		aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <body>
+		
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			
+  
+     <a href="#section2"><input type="button" class="btn btn-secondary" value="Companies"></input></font color></a>
+   &nbsp&nbsp
+
+		
+
+
+    <a href="login.html"><input type="button" class="btn btn-light" value="Login"></input></font color></a>
+  
+				&nbsp&nbsp
+		
+        
+          <a href="/register"><input type="button" class="btn btn-secondary" value="Register"></input></a>
+          &nbsp&nbsp
+          
+            <a href="http://127.0.0.1:8000/admin/"><input type="button" class="btn btn-light" value="Admin Login"></input></a>
+     
+    
+    </nav>
+
+    <div class="banner"></div>
+    <div class="main" id="section1">
+        <br><br>
+        
+        <center>
+          <br><br>
+            <h2><font color="blue"><b><font face="Sans-serif">&nbsp&nbspOnline Job&nbsp</font><font color="yellow">Portal</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2>
+            </font></b>
+                &nbsp&nbsp&nbsp
+                <b><font size="8">Find your dream job now..</font></b>
+          
+              <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font color="red">_______________________________________________</font><br><br>
+              &nbsp&nbsp&nbsp&nbsp&nbsp
+              <font color="black"><font size="4"><font face="Sans-serif">More Than 5 lakh+ Jobs for you to Explore<br><br></font>
+           
+
+              
+              &nbsp&nbsp&nbsp&nbsp
+          
+              
+             </center>
+
+        </div> 
+
+  
+
+        <div class="main" id="section2"><br><br><br><center><h2><font face="cursive" color="yellow"><u><b>Search Job By Category</font></b></u></center></h2><br>       
+            <div class="container" id="section3">
+              <div class="card-columns">
+                <div class="card bg-light">
+                  
+                  <br>
+                  <center><img class="card-img-top" src="https://www.shutterstock.com/image-vector/house-logo-template-design-vector-600nw-741515455.jpg" alt="Card image" height="65" style="width:20%"></center>
+            
+        
+                  <div class="card-body text-center">
+                    <h4><font color="black"><b>Work From Home</b></h4>
+                    
+                    <br><a href="remote.html"><input type="button" class="btn btn-success" value="Remote"></input></a><br>
+                  </div>
+                </div>
+        
+                <div class="card bg-light">
+                  <br>
+                  <center><img class="card-img-top" src="https://asset.brandfetch.io/iddey7m-tM/id6sHcv3Y5.jpeg" alt="Card image" height="100" style="width:60%"></center>
+            <br>
+                  <div class="card-body text-center">
+                    <h4><font color="black"><b>Sales</b></h4>
+                    <a href="sales.html"><input type="button" class="btn btn-primary" value="Sales"></input></a>
+                  </div>
+                </div>
+        
+                <div class="card bg-light">
+                  <br>
+                  <center><img class="card-img-top" src="https://static.vecteezy.com/system/resources/previews/008/325/928/non_2x/real-estate-building-logo-icon-design-free-vector.jpg" alt="Card image" height="100" style="width:35%"></center>
+           
+                  <div class="card-body text-center">
+                    <h4><font color="black"><b>MNC</b></h4> 
+                
+                <a href="mnc.html"><input type="button" class="btn btn-warning" value="MNC"></input></a>
+                
+                  
+                  
+                  </div>
+                </div>
+                
+               
+                    <div class="card bg-light">
+                      <br>
+                  <center><img class="card-img-top" src="https://cdn.pixabay.com/photo/2021/07/02/04/48/settings-6380866_1280.png" alt="Card image" height="90" style="width:30%"></center>
+          
+                      <div class="card-body text-center">
+                        <h4><font color="black"><b>Engineering</b></h4>
+                        
+                        <br><a href="engineering.html"><input type="button" class="btn btn-danger" value="Engineering"></input></a><br>
+                      </div>
+                </div>  
+        
+                <div class="card bg-light">
+                  <br>
+                  <center><img class="card-img-top" src="https://t3.ftcdn.net/jpg/01/42/14/80/360_F_142148009_E9xFeDO0XWWx87hsxuElzIu22fkL5KB9.jpg" alt="Card image" height="67" style="width:22%"></center>
+            <br>
+                  <div class="card-body text-center">
+                    <h4><font color="black"><b>Software & IT</b></h4>
+                     
+                  
+                  <a href="softit.html"><input type="button" class="btn btn-secondary" value="Software & IT"></input></a>
+                  
+                  </div>
+                </div>
+        
+                <div class="card bg-light">
+                  <br>
+                  <center><img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZil5AqtnG6idWZ3t95d8w045KBd_TxyPBIbKN1IDiew36anl6xdTFn70j1a_Ig1o07Og&usqp=CAU" alt="Card image" height="80" style="width:30%"></center>
+            <br>
+                  <div class="card-body text-center">
+                    <h4><font color="black"><b>Marketing</b></h4>
+                    <br>
+                    <a href="marketing.html"><input type="button" class="btn btn-success" value="Marketing"></input></a>
+                  <br>
+                  </div>
+                </div>
+              </div>
+          
+
+            </div>
+<br><br><br><br><br><br><br>
+
+<div class="main" id="sectionnew">
+  <br><br>
+  <center><h3><b>Featured companies actively hiring</b></h3><br>
+    <a href="#sectionnew"><button type="button" class="btn btn-outline-dark active">All</button></a>&nbsp
+    <a href="#sectionnew1"><button type="button" class="btn btn-outline-dark">IT</button></a>&nbsp
+      <a href="#sectionnew2"><button type="button" class="btn btn-outline-dark">BFSI</button></a>
+</center>
+
+<br><br>
+<div class="row">
+  <div class="col-sm-2">
+    <div class="card" style="border-radius: 25px;">
+      <div class="card-body">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYxYv1scPhdVy3HbXzo31Adj9GcUtXWPb4Bu2X8tk5QSTW3jdh70U5kT3YhtJQEBlGNqY&usqp=CAU" width="170" height="100">
+      <br><br>
+        <div class="alert alert-danger" role="alert" style="border-radius: 20px;"><b>Hitachi Energy</b><br><h6><i class='bx bxs-star' ></i>4.1 | 508 Reviews</h6></div>
+        <p class="card-text">Advancing a Sustainaable energy future for all.</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-2">
+    <div class="card" style="border-radius: 25px;">
+      <div class="card-body"><center>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Wells_Fargo_Logo_%282020%29.svg/1200px-Wells_Fargo_Logo_%282020%29.svg.png" width="100" height="100"></center>
+       <br>
+        <div class="alert alert-danger" role="alert" style="border-radius: 20px;"><b>Wells Fargo</b><br><h6><i class='bx bxs-star' ></i>4.1 | 5.3K+ Reviews</h6></div> 
+       <p class="card-text">Start Your Future Now.</p><br>
+       
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <div class="card" style="border-radius: 25px;">
+      <div class="card-body"><center>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ajtINrFG9pipIbLk7upnTLKXFx0IZgDgKRqNAcg35A&s"width="150" height="120"></center>
+        <br>
+        <div class="alert alert-success" role="alert" style="border-radius: 20px;"><b>Std. Chartered</b><br><h6><i class='bx bxs-star' ></i>3.9 | 4K+ Reviews</h6></div>
+        <p class="card-text"><h6>We Strive to be the great place to work & bank</h6></p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <div class="card" style="border-radius: 25px;">
+      <div class="card-body">
+        <center>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGlyZZ8AF7ALJ-_mK5A-vRMB_uZ9brCKh4gqf3UGDpDA&s"width="150" height="120"></center>
+        <br>
+        <div class="alert alert-success" role="alert" style="border-radius: 20px;"><b>Xoriant</b><br><h6><i class='bx bxs-star' ></i>3.9 | 1.4K+ Reviews</h6></div>
+        <p class="card-text"><h6>Software Devlopment & Technology services firm.</h6></p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <div class="card" style="border-radius: 25px;">
+      <div class="card-body">
+        <center>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT75s-0rWMxyvz-RUVCQR3iqLfIMYSBkiSC0y6cacpTLg&s"width="150" height="120"></center>
+          <div class="alert alert-warning" role="alert" style="border-radius: 20px;"><b>Reliance Industries</b><br><h6><i class='bx bxs-star' ></i>4.1 | 14K+ Reviews</h6></div>
+          <p class="card-text"><h6>Indian Multinational congolomerate company.</h6></p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <div class="card" style="border-radius: 25px;">
+      <div class="card-body">
+        <center>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Logo_Cognizant.png"width="150" height="120"></center>
+          <br>
+          <div class="alert alert-warning" role="alert" style="border-radius: 20px;"><b>cognizant</b><br><h6><i class='bx bxs-star' ></i>3.9 | 42.9K+ Reviews</h6></div>
+          <p class="card-text"><h6>Leading ITeS company with global presence.</h6></p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<div class="main" id="sectionnew1">
+  <br><br>
+
+  <center><h3><b>Featured companies actively hiring</b></h3><br>
+    <a href="#sectionnew"><button type="button" class="btn btn-outline-dark ">All</button></a>&nbsp
+      <a href="#sectionnew1"><button type="button" class="btn btn-outline-dark active">IT</button></a>&nbsp
+        <a href="#sectionnew2"><button type="button" class="btn btn-outline-dark">BFSI</button></a>
+  </center>
+  
+  <br><br>
+
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="card" style="border-radius: 25px;">
+        <div class="card-body">
+          <center>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGlyZZ8AF7ALJ-_mK5A-vRMB_uZ9brCKh4gqf3UGDpDA&s"width="150" height="120"></center>
+          <div class="alert alert-success" role="alert" style="border-radius: 20px;"><b>Xoriant</b><br><h6><i class='bx bxs-star' ></i>3.9 | 1.4K+ Reviews</h6></div>
+          <p class="card-text"><h6>Software Devlopment & Technology services firm.</h6></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card" style="border-radius: 25px;">
+        <div class="card-body">
+          <center>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Logo_Cognizant.png"width="150" height="120"></center>
+            <div class="alert alert-warning" role="alert" style="border-radius: 20px;"><b>cognizant</b><br><h6><i class='bx bxs-star' ></i>3.9 | 42.9K+ Reviews</h6></div>
+            <p class="card-text"><h6>Leading ITeS company with global presence.</h6></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card" style="border-radius: 25px;">
+        <div class="card-body">
+          <center>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGfgSJkXCDqSTF9RFLdtLzUy4gmWGhXUoxq22AhUNkTg&s"width="100" height="100"></center>
+            <br>
+            <div class="alert alert-warning" role="alert" style="border-radius: 20px;"><b>Capgemini</b><br><h6><i class='bx bxs-star' ></i>3.9 | 35+ Reviews</h6></div>
+            <p class="card-text">Global Leader in Technology Services.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card" style="border-radius: 25px;">
+        <div class="card-body">
+          <center>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqQesWthbrSGzKp6t8EWdq-Y0vRKzLvBgeLe6oVVLuCQ&s"width="150" height="120"></center>
+            <div class="alert alert-warning" role="alert" style="border-radius: 20px;"><b><h6>Genpact</b><br><i class='bx bxs-star' ></i>3.9 | 26.8K+ Reviews</h6></div>
+          <p class="card-text"><h6>Global professional services firm.</h6></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card" style="border-radius: 25px;">
+        <div class="card-body">
+          <center>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiO7gBQlIu-5eL-oO3KOqfJBaECyizlbCgC2J2OcZSjg&s"width="100" height="100"></center>
+            <br>
+            <div class="alert alert-warning" role="alert" style="border-radius: 20px;"><b>Datamatics</b><br><h6><i class='bx bxs-star' ></i>3.6 | 1.8K+ Reviews</h6></div>
+          <p class="card-text"><h6>Global Digital Solution & Technology company.</h6></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card" style="border-radius: 25px;">
+        <div class="card-body">
+          <center>
+            <img src="https://asset.brandfetch.io/idKqBXb52x/id28A5Zdaq.png"width="100" height="100"></center>
+            <br>
+            <div class="alert alert-warning" role="alert" style="border-radius: 20px;"><b>Accolite Digital</b><br><h6><i class='bx bxs-star' ></i>3.5 | 567 Reviews</h6></div>
+          <p class="card-text"><h6>Digital transformation services provider.</h6></p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+<div class="main" id="sectionnew2">
+  <br><br>
+  <center><h3><b>Featured companies actively hiring</b></h3><br>
+  <a href="#sectionnew"><button type="button" class="btn btn-outline-dark ">All</button></a>&nbsp
+    <a href="#sectionnew1"><button type="button" class="btn btn-outline-dark">IT</button></a>&nbsp
+      <a href="#sectionnew2"><button type="button" class="btn btn-outline-dark active">BFSI</button></a>
+</center>
+
+<br><br>
+
+  <div class="row justify-content-center">
+    <div class="col-sm-2">
+      <div class="card" style="border-radius: 25px;">
+        <div class="card-body"><center>
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Wells_Fargo_Logo_%282020%29.svg/1200px-Wells_Fargo_Logo_%282020%29.svg.png" width="100" height="100"></center>
+         <br>
+          <div class="alert alert-danger" role="alert" style="border-radius: 20px;"><b>Wells Fargo</b><br><h6><i class='bx bxs-star' ></i>4.1 | 5.3K+ Reviews</h6></div> 
+         <p class="card-text">Start Your Future Now.</p><br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card" style="border-radius: 25px;">
+        <div class="card-body"><center>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ajtINrFG9pipIbLk7upnTLKXFx0IZgDgKRqNAcg35A&s"width="150" height="120"></center>
+          <br>
+          <div class="alert alert-success" role="alert" style="border-radius: 20px;"><b>Std. Chartered</b><br><h6><i class='bx bxs-star' ></i>3.9 | 4K+ Reviews</h6></div>
+          <p class="card-text"><h6>We Strive to be the great place to work & bank.</h6></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card" style="border-radius: 25px;">
+        <div class="card-body">
+          <center>
+            <img src="https://getvectorlogo.com/wp-content/uploads/2018/12/icici-bank-vector-logo.png"width="150" height="120"></center>
+            <br>
+            <div class="alert alert-success" role="alert" style="border-radius: 20px;"><b>ICICI Bank</b><br><h6><i class='bx bxs-star' ></i>4.0 | 34.3K+ Reviews</h6></div>
+          <p class="card-text">Leading Private Sector Bank in India.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card" style="border-radius: 25px;">
+        <div class="card-body"><center>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTepw1xFCGp7B2hhQ23bol8C5hujXWWT9ZoAAxSHrlfRA&s"width="150" height="120"></center>
+            <br>
+            <div class="alert alert-success" role="alert" style="border-radius: 20px;"><b>Empower</b><br><h6><i class='bx bxs-star' ></i>3.8 | 227 Reviews</h6></div>
+          <p class="card-text">We're a financial service company.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3 width="150" height="50">Online Job Portal</h3>
+        <p><h6><b>Success starts here.</b></h6>
+        <font color="red">A22-Block,Rohini<br>
+        Sec-3,New Delhi,110085<br>
+        ph:90909110</font>
+
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="http://127.0.0.1:8000/">Home</a></li>
+          <li><a href="http://127.0.0.1:8000/aboutus.html">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">  
+        <h5>Connect with Us</h5>
+        <ul class="social-icons">
+          <i class='bx bxl-instagram'></i>
+          <i class='bx bxl-twitter'></i>
+          <i class='bx bxl-linkedin'></i>
+          <i class='bx bxl-facebook-square'></i>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Copyright <a href="#">Online Job Portal</a>. All Rights Reserved.</p>
+  </div>
+</footer>
+</div>
+
+
+
+
+</html>
+

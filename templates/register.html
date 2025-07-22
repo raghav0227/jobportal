@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registeration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://www.bhmpics.com/downloads/Blue-Matrix-Wallpaper-(30-+-Background-Pictures)/15.depositphotos_62899739-stock-photo-binary-computer-code-blue-abstract.jpg");
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        max-width: 400px;
+        width: 100%;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    textarea {
+        height: 100px;
+        resize: vertical;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2 style="text-align: center;">Registration Form</h2>
+    <form method="post" action="/register" id="myform">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" pattern="[A-Za-z]+" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Create Password:</label>
+            <input type="text" id="Password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" onclick="show()">
+        </div>
+        <script>
+        function show()
+        {
+
+            const form = document.getElementById('myform');
+            form.addEventListener('submit', (event) => {
+                const phoneNumber = document.getElementById('phone').value;
+                const regex = /^[6789]\d{9}$/; 
+                
+                if (regex.test(phoneNumber)) {
+                    alert("Valid phone number!");
+                    alert("Successfully Applied! Will contact you soon");
+                } else {
+                    event.preventDefault(); 
+                    alert("Invalid phone number. Please enter a number starting with 6, 7, 8, or 9 and consisting of 10 digits.");
+                }
+            
+        });}
+    </script>
+    </form>
+</div>
+
+</body>
+</html>
