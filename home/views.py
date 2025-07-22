@@ -3,16 +3,6 @@ from home.models import Techmahindraapply,Datareg,Amazonapply,Microapply
 from django.http import HttpResponse
 from django.contrib.auth import get_user_model
 
-def reset_admin_password(request):
-    User = get_user_model()
-    try:
-        user = User.objects.get(username='admin')  # change to your actual admin username
-        user.set_password('NewSecurePassword123')  # change to your new password
-        user.save()
-        return HttpResponse("Admin password reset successful.")
-    except User.DoesNotExist:
-        return HttpResponse("Admin user not found.")
-
 
 def index(request):
     return render(request,'index.html')
