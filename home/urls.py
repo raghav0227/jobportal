@@ -1,29 +1,40 @@
-from django.contrib import admin
 from django.urls import path
 from home import views
 
 urlpatterns = [
-    path("",views.index,name='home'),
-    path("login.html",views.login,name='login'),
-    path('',views.style),
-    path("register.html",views.register,name='register'),
-     path("register",views.register,name='register'),
-   path('',views.registerstyle),
-    path("loginmain.html",views.loginmain,name='mainscreen'),
-    path("microabout.html",views.microabout,name='microabout'),
-    path("microapply.html",views.microapply,name='microapply'),
-    path("microapply",views.microapply,name='microapply'),
-    path("amazonabout.html",views.amazonabout,name='amazonabout'),
-    path("amazonapply.html",views.amazonapply,name='amazonapply'),
-    path("amazonapply",views.amazonapply,name='amazonapply'),
-    path("mahindratechabout.html",views.mahindratechabout,name='mahindratechabout'),
-    path("mahindratechapply.html",views.mahindratechapply,name='mahindratechapply'),
-    path("techmahindraapply",views.techmahindraapply,name='techmahindraapply'),
-    path("remote.html",views.remote,name='remote'),
-    path("sales.html",views.sales,name='sales'),
-    path("mnc.html",views.mnc,name='mnc'),
-    path("softit.html",views.softit,name='softit'),
-    path("engineering.html",views.eng,name='eng'),
-    path("marketing.html",views.marketing,name='marketing'),
-    path("aboutus.html",views.about,name='about'),
-    ]
+    # Homepage
+    path('', views.index, name='home'),
+
+    # Auth
+    path('login/', views.login, name='login'),
+    path('register/', views.register, name='register'),
+    
+    # Custom styling (if needed for static/style views)
+    path('style/', views.style, name='style'),
+    path('registerstyle/', views.registerstyle, name='registerstyle'),
+
+    # Post-login screen
+    path('loginmain/', views.loginmain, name='mainscreen'),
+
+    # Job details & application
+    path('microabout/', views.microabout, name='microabout'),
+    path('microapply/', views.microapply, name='microapply'),
+
+    path('amazonabout/', views.amazonabout, name='amazonabout'),
+    path('amazonapply/', views.amazonapply, name='amazonapply'),
+
+    path('mahindratechabout/', views.mahindratechabout, name='mahindratechabout'),
+    path('mahindratechapply/', views.mahindratechapply, name='mahindratechapply'),
+    path('techmahindraapply/', views.techmahindraapply, name='techmahindraapply'),
+
+    # Job categories
+    path('remote/', views.remote, name='remote'),
+    path('sales/', views.sales, name='sales'),
+    path('mnc/', views.mnc, name='mnc'),
+    path('softit/', views.softit, name='softit'),
+    path('engineering/', views.eng, name='eng'),
+    path('marketing/', views.marketing, name='marketing'),
+
+    # Static pages
+    path('aboutus/', views.about, name='about'),
+]
