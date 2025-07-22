@@ -23,7 +23,5 @@ admin.site.index_title = "Welcome to Online Job Portal"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('home.urls')),
-    path('', views.index, name='index'),
-    path('login/', views.login_view, name='login'),
-    path('register/', views.register_view, name='register')
+  
 ]
