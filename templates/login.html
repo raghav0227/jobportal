@@ -13,15 +13,14 @@
   <!-- Optional: Inline background image style -->
   <style>
     body {
-      background-image: url("{% static 'img.jpg' %}");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-
+  background-image: url("/static/img.jpg"); /* Relative to STATIC_URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
     .wrapper {
       background-color: rgba(255, 255, 255, 0.85); /* Light background for readability */
       padding: 30px;
