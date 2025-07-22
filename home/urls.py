@@ -10,7 +10,7 @@ urlpatterns = [
     path('register/', views.register, name='register'),
     
     # Custom styling (if needed for static/style views)
-    path('style/', views.style, name='style'),
+    #path('style/', views.style, name='style'),
     path('registerstyle/', views.registerstyle, name='registerstyle'),
 
     # Post-login screen
