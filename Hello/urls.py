@@ -14,14 +14,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
-from django.urls import path,include
-from . import views
+from django.urls import path, include
+
+# Customizing the admin panel title
 admin.site.site_header = "Online Job Portal Admin"
 admin.site.site_title = "Online Job Portal"
 admin.site.index_title = "Welcome to Online Job Portal"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('home.urls')),
-  
+    path('', include('home.urls')),  # Main app URL routing
 ]
